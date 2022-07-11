@@ -32,3 +32,7 @@ const morseCodeAlphabet = {
     question: "..--.."
 
 }
+
+export const translateMorseCode = (event) => {
+
+}
