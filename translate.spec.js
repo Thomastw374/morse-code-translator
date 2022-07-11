@@ -6,10 +6,10 @@ it("should translate 'Hello' to '.... . .-.. .-.. ---", () => {
     expect(result).toBe(".... . .-.. .-.. ---");
 })
 
-// it("should alert 'text empty' when english input is empty", () => {
-//     const result = translateMorseCode("")
-//     expect(result).toBe("")
-// })
+it("should alert 'text empty' when english input is empty", () => {
+    const result = translateMorseCode("")
+    expect(result).toBe("text empty")
+})
 
 it("should translate '.,?' to '.-.-.- --..-- ..--..", () => {
   const result = translateMorseCode(".,?");

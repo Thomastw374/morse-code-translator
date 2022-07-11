@@ -28,6 +28,11 @@ const morseCodeAlphabet = {
 
 export const translateMorseCode = (englishString) => {
   let morseCodeArr = [];
+
+  if (englishString.length == "") {
+    return "text empty"
+  }
+
   for (let i = 0; i < englishString.length; i++) {
     if (englishString[i] == ".") {
       morseCodeArr.push(".-.-.-");
