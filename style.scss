@@ -52,11 +52,31 @@
 .main {
   .main__english-text-box {
     background-color: $tertiary-color;
+    width: 20rem;
+    margin-block: 1rem;
+    font-size: 1.25rem;
+    color: $primary-color;
   }
 
   .main__morse-code-text-box {
     background-color: $tertiary-color;
+    width: 20rem;
+    margin-block: 1rem;
+    font-size: 1.25rem;
+    color: $primary-color;
   }
 
-  .main
+  .main__translate-button {
+    background-color: $tertiary-color;
+    width: 7rem;
+    color: $primary-color;
+    font-size: 1.25rem;
+  }
+
+  .main__translator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 1rem;
+  }
 }
