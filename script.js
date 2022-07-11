@@ -34,21 +34,28 @@ const morseCodeAlphabet = {
   x: "-..-",
   y: "-.--",
   z: "--..",
-  fullstop: ".-.-.-",
-  comma: "--..--",
-  question: "..--..",
 };
 
 export const translateMorseCode = (event) => {
-  englishString = englishTextBox.value;
-  console.log(englishString)
-  let morseCodeArr = []
+  englishString = englishTextBox.value.toLowerCase();
+  console.log(englishString);
+  let morseCodeArr = [];
 
-  for (i=0; i<englishString.length; i++) {
-    morseCodeArr.push(morseCodeAlphabet[englishString[i]]);
+  for (i = 0; i < englishString.length; i++) {
+    if (englishString[i] == ".") {
+      morseCodeArr.push(".-.-.-");
+    } else if (englishString[i] == ",") {
+      morseCodeArr.push("--..--");
+    } else if (englishString[i] == "?") {
+      morseCodeArr.push("..--..");
+    } else {
+        morseCodeArr.push(morseCodeAlphabet[englishString[i]]);
+    }
+
+    
   }
 
-  morseCodeTextBox.value = morseCodeArr.join(" ")
+  morseCodeTextBox.value = morseCodeArr.join(" ");
 };
 
 translateButton.addEventListener("click", translateMorseCode);

@@ -10,3 +10,8 @@ it("should translate 'Hello' to '.... . .-.. .-.. ---", () => {
 //     const result = translateMorseCode("")
 //     expect(result).toBe("")
 // })
+
+it("should translate '.,?' to '.-.-.- --..-- ..--..", () => {
+  const result = translateMorseCode(".,?");
+  expect(result).toBe(".-.-.- --..-- ..--..");
+});
