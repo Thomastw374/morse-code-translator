@@ -1,7 +1,6 @@
 {
   "name": "morse-code-translator",
   "version": "1.0.0",
-  "description": "",
   "main": "script.js",
   "scripts": {
     "test": "jest"
@@ -21,5 +20,6 @@
     "@babel/preset-env": "^7.18.6",
     "babel-jest": "^28.1.2",
     "jest": "^28.1.2"
-  }
+  },
+  "description": ""
 }

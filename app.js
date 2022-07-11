@@ -36,12 +36,9 @@ const morseCodeAlphabet = {
   z: "--..",
 };
 
-export const translateMorseCode = (event) => {
-  englishString = englishTextBox.value.toLowerCase();
-  console.log(englishString);
+const translateMorseCode = (englishString) => {
   let morseCodeArr = [];
-
-  for (i = 0; i < englishString.length; i++) {
+  for (let i = 0; i < englishString.length; i++) {
     if (englishString[i] == ".") {
       morseCodeArr.push(".-.-.-");
     } else if (englishString[i] == ",") {
@@ -49,13 +46,18 @@ export const translateMorseCode = (event) => {
     } else if (englishString[i] == "?") {
       morseCodeArr.push("..--..");
     } else {
-        morseCodeArr.push(morseCodeAlphabet[englishString[i]]);
+      morseCodeArr.push(morseCodeAlphabet[englishString[i].toLowerCase()]);
     }
-
-    
   }
 
-  morseCodeTextBox.value = morseCodeArr.join(" ");
+  return morseCodeArr.join(" ");
 };
 
-translateButton.addEventListener("click", translateMorseCode);
+
+const handleTranslate = (event) => {
+  englishString = englishTextBox.value.toLowerCase();
+  console.log(englishString);
+  morseCodeTextBox.value = translateMorseCode(englishString);
+};
+
+translateButton.addEventListener("click", handleTranslate);
