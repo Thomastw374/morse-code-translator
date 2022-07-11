@@ -71,6 +71,9 @@
     width: 7rem;
     color: $primary-color;
     font-size: 1.25rem;
+    border:gray 1px solid;
+    box-shadow: 1px 1px $secondary-color;
+    // ADD SOME HOVER STYLING
   }
 
   .main__translator-container {
@@ -78,5 +81,21 @@
     flex-direction: column;
     align-items: center;
     margin-inline: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    .main__translator-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin-inline: 1rem;
+    }
+
+    .main__translate-button {
+      margin: 1rem;
+    }
   }
 }

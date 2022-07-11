@@ -60,10 +60,25 @@
   width: 7rem;
   color: white;
   font-size: 1.25rem;
+  border: gray 1px solid;
+  box-shadow: 1px 1px #D9BEA5;
 }
 .main .main__translator-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-inline: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main .main__translator-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-inline: 1rem;
+  }
+  .main .main__translate-button {
+    margin: 1rem;
+  }
 }
