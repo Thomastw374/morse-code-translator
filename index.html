@@ -7,23 +7,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="translator-container">
+    <header class="header">
+        <h1 class="header__title">MORSE CODE<span class="header__title header__title--alt-color"> TRANSLATOR</span class:="header__title"></h1>
+        
+        <div class="header__menu">
+            <div class="header__rectangle-1"></div>
+
+            <div class="header__rectangle-2"></div>
+        </div>
+
+        <div class="header__menu-alternative" >
+
+            <a class= "header__text" href="#">About</a>
+            <a class= "header__text" href="#">Portfolio</a>
+            <a class= "header__text" href="#">Contact</a>
+    
+        </div>
+    </header>
+    <main class="main">
+      <div class="main__translator-container">
       <textarea
         name=""
-        class="translator-container__english-text-box"
+        class="main__english-text-box"
         cols="30"
         rows="10"
       ></textarea>
-      <button class="translator-container__translate-button">
+      <button class="main__translate-button">
         Translate to Morse Code
       </button>
       <textarea
         name=""
-        class="translator-container__morse-code-text-box"
+        class="main__morse-code-text-box"
         cols="30"
         rows="10"
       ></textarea>
     </div>
+    </main>
+    
     <script src="app.js"></script>
   </body>
 </html>

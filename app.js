@@ -1,11 +1,11 @@
 const englishTextBox = document.querySelector(
-  ".translator-container__english-text-box"
+  ".main__english-text-box"
 );
 const morseCodeTextBox = document.querySelector(
-  ".translator-container__morse-code-text-box"
+  ".main__morse-code-text-box"
 );
 const translateButton = document.querySelector(
-  ".translator-container__translate-button"
+  ".main__translate-button"
 );
 
 const morseCodeAlphabet = {
