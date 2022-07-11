@@ -71,14 +71,31 @@
 }
 
 @media screen and (min-width: 768px) {
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+  }
   .main .main__translator-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-inline: 1rem;
+    margin-inline: 2rem;
+    width: 100%;
   }
   .main .main__translate-button {
-    margin: 1rem;
+    margin: 2rem;
+    width: 10rem;
+  }
+  .main .main__english-text-box {
+    width: 70%;
+    max-width: 40rem;
+  }
+  .main .main__morse-code-text-box {
+    width: 70%;
+    max-width: 40rem;
   }
 }
